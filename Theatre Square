@@ -1,0 +1,16 @@
+#include <stdio.h>
+long long flagstone(long long n, long long m, long long a)
+{
+    long long fl = (n+a-1)/a;
+    long long fw = (m+a-1)/a;
+    long long tf = fl*fw;
+    return tf;
+}
+int main()
+{
+    long long n,m,a;
+    scanf("%lld %lld %lld", &n, &m, &a);
+    long long result = flagstone(n,m,a);
+    printf("%lld\n", result);
+    return 0;
+}
